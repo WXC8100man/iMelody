@@ -3,11 +3,26 @@
   "version": "1.0",
   "author": "Vcrelt373246",
   "license-name": "GPL-2.0-or-later",
-  "description": "Parses and plays iMelody (.imy) ringtone objects using {{#imy:}}.",
+  "description": "Parses and plays iMelody (.imy) ringtone objects using {{#imy:}} and the IMY: namespace.",
   "type": "parserhook",
   "requires": {
     "MediaWiki": ">= 1.39.0"
   },
+  "namespaces": [
+    {
+      "id": 5800,
+      "constant": "NS_IMY",
+      "name": "IMY",
+      "defaultcontentmodel": "wikitext",
+      "subpages": true
+    },
+    {
+      "id": 5801,
+      "constant": "NS_IMY_TALK",
+      "name": "IMY_talk",
+      "subpages": true
+    }
+  ],
   "ExtensionMessagesFiles": {
     "iMelodyMagic": "iMelody.i18n.magic.php"
   },
@@ -15,7 +30,8 @@
     "IMY\\IMYParser": "includes/IMYParser.php"
   },
   "Hooks": {
-    "ParserFirstCallInit": "IMY\\IMYParser::onParserFirstCallInit"
+    "ParserFirstCallInit": "IMY\\IMYParser::onParserFirstCallInit",
+    "OutputPageBeforeHTML": "IMY\\IMYParser::onOutputPageBeforeHTML"
   },
   "ResourceModules": {
     "ext.iMelody.player": {
