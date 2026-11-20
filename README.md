@@ -33,7 +33,7 @@ iMelody (Mediawiki Extension) is an Mediawiki extension for parses and plays iMe
 If you have published this extension to Packagist or added it as a local/VCS repository in your root MediaWiki `composer.local.json`:
 
 1. Create a `composer.json` inside `extensions/iMelody/`:
-   ```json
+   ```
    {
   "name": "iMelody",
   "version": "1.0",
