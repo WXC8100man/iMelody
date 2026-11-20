@@ -12,17 +12,17 @@ iMelody (Mediawiki Extension) is an Mediawiki extension for parses and plays iMe
 ### Method 1: Manual Installation
 1. Download or clone the extension files into your MediaWiki `extensions/` directory so the path is `extensions/iMelody`.
 2. Ensure your file structure looks like this:
-   ```iMelody/
-├── .gitignore
+   iMelody/
 ├── composer.json
 ├── extension.json
 ├── README.md
+├── LICENSE
 ├── includes/
 │   └── IMYParser.php
 └── resources/
     └── imy-player.js
-   ```
-3. Add the following line to the bottom of your `LocalSettings.php` file:
+
+4. Add the following line to the bottom of your `LocalSettings.php` file:
    ```php
    wfLoadExtension( 'iMelody' );
    ```
