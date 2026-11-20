@@ -8,6 +8,9 @@
   "requires": {
     "MediaWiki": ">= 1.39.0"
   },
+  "ExtensionMessagesFiles": {
+    "iMelodyMagic": "iMelody.i18n.magic.php"
+  },
   "AutoloadClasses": {
     "IMY\\IMYParser": "includes/IMYParser.php"
   },
