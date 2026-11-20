@@ -32,12 +32,13 @@ iMelody (Mediawiki Extension) is an Mediawiki extension for parses and plays iMe
 ### Method 2: Using Composer
 If you have published this extension to Packagist or added it as a local/VCS repository in your root MediaWiki `composer.local.json`:
 
-1. Create a `composer.json` inside `extensions/iMelody/`:
-   ```
-   {
+1.1. Create an `extension.json` file inside `extensions/iMelody/`:
+
+```json
+{
   "name": "iMelody",
   "version": "1.0",
-  "author": “Vcrelt373246”,
+  "author": "Vcrelt373246",
   "license-name": "GPL-2.0-or-later",
   "description": "Parses and plays iMelody (.imy) ringtone objects using {{#imy:}}.",
   "type": "parserhook",
@@ -52,7 +53,8 @@ If you have published this extension to Packagist or added it as a local/VCS rep
   },
   "manifest_version": 2
 }
-   ```
+```
+
 2. Run Composer from your root MediaWiki directory:
    ```bash
    composer require vcrelt373246/mediawiki-imelody
