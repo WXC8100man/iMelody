@@ -1,5 +1,3 @@
-after extension.json use namespace, but not happending a text default "page" should not replaced Page to IMY (5800) use php, so id namespace does work:
-cat << 'EOF' > "/d/naufal/aku/app/XAMPP/htdocs/mywikitiki/extensions/iMelody/includes/IMYParser.php"
 <?php
 
 namespace IMY;
